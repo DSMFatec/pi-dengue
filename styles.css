@@ -9,7 +9,17 @@ html, body{
   text-decoration: none;
 }
 
-.navbar{
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px 10px 40px;
+  align-items: center;
+}
+
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
 
 }
 
