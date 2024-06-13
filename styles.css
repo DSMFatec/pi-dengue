@@ -1,38 +1,38 @@
-html, body{
+html,
+body {
   height: 100%;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   padding: 10px 40px 10px 40px;
   align-items: center;
 }
 
-.navbar-nav{
+.navbar-nav {
   display: flex;
   flex-direction: row;
   gap: 70px;
-
 }
 
-.nav-link:hover{
+.nav-link:hover {
   border-bottom: 2px solid black;
-  color:#21212171;
+  color: #21212171;
 }
 
-.nav-link{
-  color:#212121;
+.nav-link {
+  color: #212121;
 }
 
-main{
+main {
   display: flex;
   background-image: url(/images/topo-bg.png);
   height: 100%;
@@ -40,39 +40,38 @@ main{
   background-size: cover;
 }
 
-.hero-content{
+.hero-content {
   margin: 30px;
   display: flex;
   flex-direction: column;
-  color: white; 
+  color: white;
   align-items: flex-start;
   justify-content: center;
-  
 }
 
-.hero-content .title span{
-  font-size:60px;
+.hero-content .title span {
+  font-size: 60px;
 }
 
-.hero-content .title2 span{
-  color: #F91010;
+.hero-content .title2 span {
+  color: #f91010;
   font-weight: 650;
 }
 
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 1.2rem;
-    }
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
   }
-  
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1.4rem;
-    }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
   }
-  
-  @include media-breakpoint-up(lg) {
-    html {
-      font-size: 1.6rem;
-    }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
   }
+}
