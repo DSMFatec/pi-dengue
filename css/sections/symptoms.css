@@ -1,0 +1,50 @@
+.symptoms {
+  padding: 32px;
+}
+
+.symptoms_title {
+  font-size: 2.4em;
+  margin-bottom: 32px;
+}
+
+
+.symptoms_grid {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 140px repeat(4, 1fr);
+  gap: 32px;
+}
+
+.symptoms_dengue-card {
+  background-color: var(--green-500);
+  border-radius: 16px;
+}
+
+.symptoms_chikungunya-card {
+  background-color: var(--blue-600);
+  border-radius: 16px;
+}
+
+.symptoms_zika-card {
+  background-color: var(--yellow-500);
+  border-radius: 16px;
+}
+
+.symptoms_symptom-card {
+  background-color: var(--red-500);
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .symptoms_title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .symptoms_title {
+    font-size: 3.6em;
+  }
+}

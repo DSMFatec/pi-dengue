@@ -1,0 +1,67 @@
+.breeding-sites {
+  padding: 32px;
+}
+
+.breeding-sites_title {
+  font-size: 2.4em;
+  margin-bottom: 32px;
+}
+
+.breeding-sites_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.breeding-sites_card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+
+  background-color: var(--red-400);
+  max-height: 200px;
+  border-radius: 16px;
+}
+
+.breeding-sites_card img {
+  position: absolute;
+  top: -10%;
+  right: 32px;
+  width: 80px;
+}
+
+.breeding-sites_card-text {
+  font-size: 2.4em;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .breeding-sites_title {
+    font-size: 3em;
+  }
+
+  .breeding-sites_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .breeding-sites_card img {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .breeding-sites_title {
+    font-size: 3.6em;
+  }
+
+  .breeding-sites_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .breeding-sites_card img {
+    width: 120px;
+  }
+}
