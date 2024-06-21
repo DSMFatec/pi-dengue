@@ -1,0 +1,26 @@
+.input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.input-container {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  margin-bottom: .5rem;
+}
+
+.input-container:focus-within {
+  border: 2px solid var(--red-500);
+}

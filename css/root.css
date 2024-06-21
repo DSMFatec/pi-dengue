@@ -18,6 +18,10 @@
   --yellow-500: #e1b000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   cursor: pointer;
   outline: none;

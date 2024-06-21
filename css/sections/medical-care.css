@@ -1,5 +1,11 @@
 .medical-care {
-  padding: 32px;
+  padding: 32px 32px 0;
+}
+
+.medical-care_title {
+  font-size: 2.4em;
+  margin-bottom: 32px;
+
 }
 
 .medical-care_list {
@@ -34,6 +40,11 @@
   color: var(--red-500);
 }
 
+@media screen and (min-width: 768px) {
+  .medical-care_title {
+    font-size: 3em;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .medical-care_item {
@@ -45,12 +56,17 @@
     width: 75%;
     padding: 20px;
   }
-    .medical-care_item div {
-      text-align: left;
-    }
+
+  .medical-care_item div {
+    text-align: left;
+  }
 
   .medical-care_item:nth-child(even) {
     flex-direction: row-reverse;
+  }
+
+  .medical-care_title {
+    font-size: 3.6em;
   }
 
   .text-normal {

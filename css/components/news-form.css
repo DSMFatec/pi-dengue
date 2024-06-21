@@ -1,0 +1,9 @@
+.footer_news-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--blue-500);
+}

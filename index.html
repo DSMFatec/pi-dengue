@@ -6,37 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/root.css">
   <link rel="stylesheet" href="./css/components/header.css">
+  <link rel="stylesheet" href="./css/components/footer.css">
+  <link rel="stylesheet" href="./css/components/news-form.css">
+  <link rel="stylesheet" href="./css/components/button.css">
+  <link rel="stylesheet" href="./css/components/input.css">
+
   <link rel="stylesheet" href="./css/sections/hero.css">
   <link rel="stylesheet" href="./css/sections/breeding-sites.css">
   <link rel="stylesheet" href="./css/sections/symptoms.css">
   <link rel="stylesheet" href="./css/sections/medical-care.css">
   <link rel="stylesheet" href="./css/sections/propagation-data.css">
-  <link rel="stylesheet" href="./css/sections/footer.css">
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <title>PI - Dengue</title>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <img src="./assets/logo.webp" alt="Logo prefeitura de indaiatuba">
-    <nav>
-      <ul class="nav_list">
-        <li class="nav_list-item"><a href="#">Início</a></li>
-        <li class="nav_list-item"><a href="#">Como evitar</a></li>
-        <li class="nav_list-item"><a href="#">Sintomas</a></li>
-        <li class="nav_list-item"><a href="#">Tratamento</a></li>
-        <li class="nav_list-item"><a href="#">Propagação</a></li>
-        <li class="nav_list-item"><a href="#">Denuncie</a></li>
-      </ul>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#breeding-sites">Como evitar</a></li>
+      <li><a href="#symptoms">Sintomas</a></li>
+      <li><a href="#medical-care">Tratamento</a></li>
+      <li><a href="#propagation-data">Estatísticas</a></li>
+    </ul>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="#hero">
       <h1 class="hero_title roboto-medium">Juntos contra a DENGUE <br /> ESSA LUTA É DE
         <span class="hero_subtitle">TODOS!</span>
       </h1>
       <img src="./assets/hero-bg.webp" alt="Foco de criadouro">
     </section>
-    <section class="breeding-sites">
+    <section class="breeding-sites" id="breeding-sites">
       <h2 class="breeding-sites_title">Ajude a eliminar os criadouros:</h2>
       <div class="breeding-sites_grid">
         <div class="breeding-sites_card">
@@ -94,33 +98,72 @@
       </div>
 
     </section>
-    <!-- <section class="symptoms">
-      <h2 class="symptoms_title">Ajude a eliminar os criadouros:</h2>
-      <div class="symptoms_grid">
-        <div class="symptoms_img-card">
-          <img src="./assets/dengue.svg" alt="Mosquito da dengue" />
-        </div>
-        <div class="symptoms_dengue-card">Dengue</div>
-        <div class="symptoms_chikungunya-card">Chikungunya</div>
-        <div class="symptoms_zika-card">Zika</div>
-        <div class="symptoms_symptom-card">Febre</div>
-        <div class="symptoms_dengue-card">Sempre presente: alta e de início imediato</div>
-        <div class="symptoms_chikungunya-card"></div>
-        <div class="symptoms_zika-card"></div>
-        <div class="symptoms_symptom-card"></div>
-        <div class="symptoms_dengue-card"></div>
-        <div class="symptoms_chikungunya-card"></div>
-        <div class="symptoms_zika-card"></div>
-        <div class="symptoms_symptom-card"></div>
-        <div class="symptoms_dengue-card"></div>
-        <div class="symptoms_chikungunya-card"></div>
-        <div class="symptoms_zika-card"></div>
-        <div class="symptoms_symptom-card"></div>
-        <div class="symptoms_dengue-card"></div>
-        <div class="symptoms_chikungunya-card"></div>
-        <div class="symptoms_zika-card"></div>
-    </section> -->
-    <section class="medical-care">
+    <section class="symptoms" id="symptoms">
+      <h2 class="symptoms_title">Os sintomas</h2>
+      <div class="symptoms_container">
+        <article>
+          <img src="./assets/symptoms/dengue.webp" alt="Sintomas da dengue">
+          <div>
+            <h3 class="symptoms_subtitle">Dengue</h3>
+            <ul class="symptoms_list">
+              <li class="symptoms_item red-symptom">Febre acima de 38°C</li>
+              <li class="symptoms_item red-symptom">Dor de cabeça</li>
+              <li class="symptoms_item red-symptom">Manchas vermelhas no corpo</li>
+              <li class="symptoms_item red-symptom">Dor nas articulações</li>
+              <li class="symptoms_item blue-symptom">Dor nos ossos</li>
+              <li class="symptoms_item blue-symptom">Dor nos olhos</li>
+              <li class="symptoms_item blue-symptom">Falta de apetite</li>
+              <li class="symptoms_item blue-symptom">Mal estar</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/symptoms/zika.webp" alt="Sintomas da zika">
+          <div>
+            <h3 class="symptoms_subtitle">Zika</h3>
+            <ul class="symptoms_list">
+              <li class="symptoms_item blue-symptom">Febre baixa</li>
+              <li class="symptoms_item red-symptom">Dor de cabeça</li>
+              <li class="symptoms_item red-symptom">Manchas vermelhas no corpo</li>
+              <li class="symptoms_item red-symptom">Dor nas articulações</li>
+              <li class="symptoms_item blue-symptom">Dor nos ossos</li>
+              <li class="symptoms_item blue-symptom">Olhos vermelhos</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/symptoms/chikungunya.webp" alt="Sintomas da chikungunya">
+          <div>
+            <h3 class="symptoms_subtitle">Chikungunya</h3>
+            <ul class="symptoms_list">
+              <li class="symptoms_item red-symptom">Febre acima de 38°C</li>
+              <li class="symptoms_item red-symptom">Dor de cabeça</li>
+              <li class="symptoms_item red-symptom">Manchas vermelhas no corpo</li>
+              <li class="symptoms_item red-symptom">Dor nas articulações</li>
+              <li class="symptoms_item blue-symptom">Olhos vermelhos</li>
+              <li class="symptoms_item blue-symptom">Coceira</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <img src="./assets/symptoms/mayaro.webp" alt="Sintomas da febre de mayaro">
+          <div>
+            <h3 class="symptoms_subtitle">Mayaro</h3>
+            <ul class="symptoms_list">
+              <li class="symptoms_item red-symptom">Febre acima de 38°C</li>
+              <li class="symptoms_item red-symptom">Dor de cabeça</li>
+              <li class="symptoms_item red-symptom">Manchas vermelhas no corpo</li>
+              <li class="symptoms_item red-symptom">Dor nas articulações</li>
+              <li class="symptoms_item blue-symptom">Inchaço nas articulações</li>
+              <li class="symptoms_item blue-symptom">Dor muscular</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+    </section>
+    <section class="medical-care" id="medical-care">
+      <h2 class="medical-care_title">Estou com sintomas, o que fazer?</h2>
       <ul class="medical-care_list">
         <li class="medical-care_item">
           <img src="./assets/medical-care/hospital.svg" alt="Hospital">
@@ -154,18 +197,29 @@
         </li>
       </ul>
     </section>
-    <section class="propagation-data">
-      <h2 class="breeding-sites_title">Situação da dengue no estado</h2>
+    <section class="propagation-data" id="propagation-data">
+      <h2 class="breeding-sites_title">Situação da dengue na cidade</h2>
       <div id="chartdiv" style="width: 100%; height: 500px;"></div>
     </section>
   </main>
 
   <footer>
-    <p>Av. Eng. Fábio Roberto Barnabé, 2800 - M.D. - CEP: 13331-900</p>
-    <p>Telefones: (19)3834-9000 / 0800-770-7702</p>
-    <p>Mais informações em: <a href="https://www.indaiatuba.sp.gov.br/">https://www.indaiatuba.sp.gov.br/</a></p>
+    <div class="footer_contacts">
+      <p>Av. Eng. Fábio Roberto Barnabé, 2800 - M.D. - CEP: 13331-900</p>
+      <p>Telefones: (19)3834-9000 / 0800-770-7702</p>
+      <p>Mais informações em: <a href="https://www.indaiatuba.sp.gov.br/">https://www.indaiatuba.sp.gov.br/</a></p>
+    </div>
+    <form id="footer_news-form">
+      <label for="email" class="input-label">Receba atualizações</label>
+      <div class="input-container">
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" class="input">
+      </div>
+      <button type="submit" class="btn" id="footer_news-submit">Enviar</button>
+    </form>
+
   </footer>
   <script src="./js/index.js" type="module"></script>
+  <script src="./js/form.js" type="module"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment-with-locales.min.js"></script>
 
   <script src="https://www.amcharts.com/lib/4/core.js"></script>
