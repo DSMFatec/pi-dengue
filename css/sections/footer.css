@@ -1,0 +1,16 @@
+footer {
+  padding: 2rem;
+
+  background-color: var(--blue-500);
+}
+
+footer p {
+  color: var(--white);
+  font-size: 1.6em;
+  text-align: center;
+
+  a {
+    font-size: 1em;
+    color: var(--white);
+  }
+}
