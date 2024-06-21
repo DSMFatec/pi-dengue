@@ -1,6 +1,5 @@
 .medical-care {
   padding: 32px;
-  height: 100vh;
 }
 
 .medical-care_list {
@@ -18,6 +17,10 @@
   gap: 32px;
   width: 100%;
   padding: 24px;
+}
+
+.medical-care_item div {
+  text-align: center;
 }
 
 .text-normal {
@@ -42,6 +45,9 @@
     width: 75%;
     padding: 20px;
   }
+    .medical-care_item div {
+      text-align: left;
+    }
 
   .medical-care_item:nth-child(even) {
     flex-direction: row-reverse;
